@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Credit Card Validation Site</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="shortcut icon" href="css/img/master.png">
+</head>
+<body>
+	<nav id="main-header">
+
+		<h1>Card Validation Site</h1>
+		<img src="css/img/master.png" alt="logo">
+		<small style="float: right;color: white;">Abah Joseph Israel <br>Code360 #Prework</small>
+	</nav>
+
+	<div id="container">		
+		<form>
+			<table>
+				<tr><h1>Validate your card</h1></tr><br>
+				<tr>
+					<input type="text" maxlength="20" placeholder="Enter card number" required id="input_text">
+				 </tr>
+				<tr>
+					<td><input type="button" name="button" value="Validate" onclick="validate()" ></td>
+					<td><input type="reset" name="reset" value="Clear"></td>
+				</tr>
+				<tr><center><p id="message">Invalid Card Number</p></center></tr>
+			</table>
+		</form>
+		<div id="note">
+			<center>
+			<img src="css/img/note.png" height="30" width="30">
+		</center>
+			<blockquote>
+				<small>Enter the number seperated by space or "-". <br>Eg. 4444-4444-4444-4444 or 4444 4444 4444 4444 <br></small><br>
+				Note that this validates all cards ranging from <br>
+				<ul id="cards">
+					<li>MasterCard</li>
+					<li>Visa</li>
+					<li>Others</li>
+				</ul>
+				
+			</blockquote>
+		</div>
+			
+		
+	</div>
+	<div id="container2">
+		<button id="add" style="display: none;" onclick="addItem()"></button>
+		<h1>List of validated cards</h1><br>
+		<div id="table_list">
+				
+				<ol id="validated_card">
+				</ol>
+		</div>
+		
+	</div>
+
+
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
